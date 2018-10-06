@@ -536,7 +536,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>kext-dev-mode=1 dart=0 -lilubetaall</string>
+		<string>kext-dev-mode=1 dart=0 brcmfx-country=#a -lilubetaall</string>
 		<key>DefaultVolume</key>
 		<string>OSX</string>
 		<key>NeverHibernate</key>
