@@ -740,6 +740,16 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>Disable panic kext logging on 10.14 release kernel (credit Vandroiy)</string>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Find</key>
+				<data>igKEwHRC</data>
+				<key>Replace</key>
+				<data>igKEwOtC</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
 				<false/>
