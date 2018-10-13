@@ -16,6 +16,8 @@
 				<false/>
 				<key>FixIPIC</key>
 				<true/>
+				<key>FixMutex</key>
+				<true/>
 				<key>FixRTC</key>
 				<true/>
 				<key>FixTMR</key>
@@ -371,90 +373,6 @@
 					<key>Replace</key>
 					<data>
 					AAAZABQfWFBSVwg=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Mutex SMIX,01 to SMIX,00</string>
-					<key>Find</key>
-					<data>
-					WwFTTUlYAQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WwFTTUlYAA==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Mutex WMIX,01 to WMIX,00</string>
-					<key>Find</key>
-					<data>
-					WwFXTUlYAQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WwFXTUlYAA==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Mutex ECMX,01 to ECMX,00</string>
-					<key>Find</key>
-					<data>
-					WwFFQ01YAQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WwFFQ01YAA==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Mutex ECSX,01 to ECSX,00</string>
-					<key>Find</key>
-					<data>
-					WwFFQ1NYAQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WwFFQ1NYAA==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Mutex ECM1,01 to ECM1,00</string>
-					<key>Find</key>
-					<data>
-					WwFFQ00xAQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WwFFQ00xAA==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Mutex QSEV,01 to QSEV,00</string>
-					<key>Find</key>
-					<data>
-					WwFRU0VWAQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WwFRU0VWAA==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Mutex ECAX,01 to ECAX,00</string>
-					<key>Find</key>
-					<data>
-					WwFFQ0FYAQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WwFFQ0FYAA==
 					</data>
 				</dict>
 				<dict>
