@@ -685,9 +685,6 @@
 				ILniAAAAkJA=
 				</data>
 			</dict>
-		</array>
-		<key>KextsToPatch</key>
-		<array>
 			<dict>
 				<key>Comment</key>
 				<string>Disable panic kext logging on 10.14 release kernel (credit vit9696)</string>
@@ -702,6 +699,9 @@
 				igKEwOtC
 				</data>
 			</dict>
+		</array>
+		<key>KextsToPatch</key>
+		<array>
 			<dict>
 				<key>Comment</key>
 				<string>Enable TRIM for SSD</string>
