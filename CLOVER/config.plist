@@ -27,38 +27,54 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>rename HPET to XPET,  pair with SSDT-HPET.aml</string>
+					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
 					<key>Find</key>
 					<data>
-					SFBFVA==
+					T1NJRA==
 					</data>
 					<key>Replace</key>
 					<data>
-					WFBFVA==
+					WFNJRA==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>fix Return(SDSM) problem (not the perfect way)</string>
+					<string>change _OSI to XOSI, pair with SSDT-XOSI.aml</string>
 					<key>Find</key>
 					<data>
-					U00ApFNEU01oaWprpABbgg==
+					X09TSQ==
 					</data>
 					<key>Replace</key>
 					<data>
-					U00AoAgKEaRTRFNNpABbgg==
+					WE9TSQ==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>fix Method ADBG problem (not the perfect way)</string>
+					<string>Rename _S3 to XS3X, pair with SSDT-S3</string>
+					<key>Disabled</key>
+					<true/>
 					<key>Find</key>
 					<data>
-					RwmgDlsSTURCRwCkTURCR2ikAA==
+					X1MzXw==
 					</data>
 					<key>Replace</key>
 					<data>
-					RwmgBQoRpACgBQoRpACgBAGkAA==
+					WFMzWA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>rename _RMV to XRMV</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1JNVg==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFJNVg==
 					</data>
 				</dict>
 				<dict>
@@ -71,6 +87,20 @@
 					<key>Replace</key>
 					<data>
 					WERTTQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change EC0 to EC</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					RUMwXw==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUNfXw==
 					</data>
 				</dict>
 				<dict>
@@ -101,14 +131,214 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Device AC rename to ADP1  pair with SSDT-ADP1 - credit syscl</string>
+					<string>change HDAS to HDEF, optionally pair with SSDT-HDEF.aml</string>
+					<key>Disabled</key>
+					<true/>
 					<key>Find</key>
 					<data>
-					QUNfXw==
+					SERBUw==
 					</data>
 					<key>Replace</key>
 					<data>
-					QURQMQ==
+					SERFRg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change HECI to IMEI, optionally pair with SSDT-IMEI.aml</string>
+					<key>Find</key>
+					<data>
+					SEVDSQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					SU1FSQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change MEI to IMEI</string>
+					<key>Find</key>
+					<data>
+					TUVJXw==
+					</data>
+					<key>Replace</key>
+					<data>
+					SU1FSQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change GFX0 to IGPU, optionally pair with SSDT-IGPU.aml</string>
+					<key>Find</key>
+					<data>
+					R0ZYMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					SUdQVQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change SAT0 to SATA, optionally pair with SSDT-SATA.aml</string>
+					<key>Find</key>
+					<data>
+					U0FUMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					U0FUQQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Rename device RP09.PXSX to SSD0 - syscl_SSD.txt</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					UFhTWA==
+					</data>
+					<key>Replace</key>
+					<data>
+					U1NEMA==
+					</data>
+					<key>TgtBridge</key>
+					<data>
+					UlAwOQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change reference PCI0.RP09.PXSX to PCI0.RP09.SSD0 - syscl_SSD.txt</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					UENJMFJQMDlQWFNY
+					</data>
+					<key>Replace</key>
+					<data>
+					UENJMFJQMDlTU0Qw
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change string PCI0.RP09.PXSX to PCI0.RP09.SSD0 - syscl_SSD.txt</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					UENJMC5SUDA5LlBYU1g=
+					</data>
+					<key>Replace</key>
+					<data>
+					UENJMC5SUDA5LlNTRDA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>rename HPET to XPET,  pair with SSDT-HPET.aml</string>
+					<key>Find</key>
+					<data>
+					SFBFVA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFBFVA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>fix Return(SDSM) problem (not the perfect way)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					U00ApFNEU01oaWprpABbgg==
+					</data>
+					<key>Replace</key>
+					<data>
+					U00AoAgKEaRTRFNNpABbgg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>fix Method ADBG problem (not the perfect way)</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					RwmgDlsSTURCRwCkTURCR2ikAA==
+					</data>
+					<key>Replace</key>
+					<data>
+					RwmgBQoRpACgBQoRpACgBAGkAA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Fix word field length (MSLN, Dword-&gt;Qword) - syscl_fixFieldLen.txt</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					AIpCVUYwC/gBTVNMTg==
+					</data>
+					<key>Replace</key>
+					<data>
+					AI9CVUYwC/gBTVNMTg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>RP05._PRW return GPRW (0x09, 0x04) - syscl_PXSX2ARPT.txt</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					AKRHUFJXCmkKBA==
+					</data>
+					<key>Replace</key>
+					<data>
+					AKRHUFJXCgkKBA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Rename _PWR -&gt; XPRW in PWRB(PNP0C0C) - syscl_PWRB.txt</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1BSVw==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFBSVw==
+					</data>
+					<key>TgtBridge</key>
+					<data>
+					UEJUTg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Rename _PSW -&gt; XPSW in PWRB(PNP0C0C) - syscl_PWRB.txt</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1BTVw==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFBTVw==
+					</data>
+					<key>TgtBridge</key>
+					<data>
+					UEJUTg==
 					</data>
 				</dict>
 				<dict>
@@ -137,14 +367,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Rename HS12 -&gt; HS92 to avoid the patchmatic error, pair with SSDT-TB.aml</string>
+					<string>Device AC rename to ADP1  pair with SSDT-ADP1 - credit syscl</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Find</key>
 					<data>
-					SFMxMg==
+					QUNfXw==
 					</data>
 					<key>Replace</key>
 					<data>
-					SFM5Mg==
+					QURQMQ==
 					</data>
 				</dict>
 				<dict>
@@ -163,71 +395,9 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>rename _RMV to XRMV</string>
+					<string>change LPC to LPCB, optionally pair with SSDT-EHCI_Disable.aml, SSDT-LPC.aml</string>
 					<key>Disabled</key>
 					<false/>
-					<key>Find</key>
-					<data>
-					X1JNVg==
-					</data>
-					<key>Replace</key>
-					<data>
-					WFJNVg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change GFX0 to IGPU, optionally pair with SSDT-IGPU.aml</string>
-					<key>Find</key>
-					<data>
-					R0ZYMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					SUdQVQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change HDAS to HDEF, optionally pair with SSDT-HDEF.aml</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					SERBUw==
-					</data>
-					<key>Replace</key>
-					<data>
-					SERFRg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
-					<key>Find</key>
-					<data>
-					T1NJRA==
-					</data>
-					<key>Replace</key>
-					<data>
-					WFNJRA==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _OSI to XOSI, pair with SSDT-XOSI.aml</string>
-					<key>Find</key>
-					<data>
-					X09TSQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WE9TSQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change LPC to LPCB, optionally pair with SSDT-EHCI_Disable.aml, SSDT-LPC.aml</string>
 					<key>Find</key>
 					<data>
 					TFBDXw==
@@ -235,30 +405,6 @@
 					<key>Replace</key>
 					<data>
 					TFBDQg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change SAT0 to SATA, optionally pair with SSDT-SATA.aml</string>
-					<key>Find</key>
-					<data>
-					U0FUMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					U0FUQQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change HECI to IMEI, optionally pair with SSDT-IMEI.aml</string>
-					<key>Find</key>
-					<data>
-					SEVDSQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					SU1FSQ==
 					</data>
 				</dict>
 				<dict>
@@ -359,20 +505,6 @@
 					<key>Replace</key>
 					<data>
 					WFBSVwpwEg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change LANC Method(_PRW,0,S) to Method(XPRW,0,..), pair with SSDT-LANC_PRW.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					AAAZABQfX1BSVwg=
-					</data>
-					<key>Replace</key>
-					<data>
-					AAAZABQfWFBSVwg=
 					</data>
 				</dict>
 				<dict>
@@ -560,6 +692,10 @@
 				GxkAAA==
 				</data>
 				<key>disable-external-gpu</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>enable-hdmi20</key>
 				<data>
 				AQAAAA==
 				</data>

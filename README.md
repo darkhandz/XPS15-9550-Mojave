@@ -8,7 +8,7 @@
 
 > 请不要开启`filevault`，我的配置里删除掉相关的efi文件了，你有需要的话，自己重新安装一下Clover。
 
-Clover是[Rehabman版本](https://bitbucket.org/RehabMan/clover/downloads/)的`r4658`，你也可以用官方版本。
+Clover是[Rehabman版本](https://bitbucket.org/RehabMan/clover/downloads/)的`r4701`，你也可以用官方版本。
 
 ### 硬件配置
 
@@ -41,7 +41,6 @@ DW1830是免驱的，如果你的无线网卡是Killer的，那就很不幸了�
 第一条命令的`AppleGraphicsDevicePolicyInjector.kext`是用来打开`MacBookPro13,3`这个SMBIOS的HDMI图像输出的。  
 第二条是重建缓存，让添加的第三方驱动重建缓存，在重启后生成新的缓存。
 
-对了，Other文件夹里提供了`VoodooI2C`触摸板驱动，这个可以模拟Magic Trackpad的手势(双指缩放，三指拖拽，四指各种），需要配合`VoodooPS2Controller`使用，直接放`clover/kexts/other`里重启就行了，但是目前它并不稳定，**只建议有经验的用户**折腾，否则开不了机什么的你又不会用`UEFI Shell`来删除它，那你就很被动了。
 
 ### 耳机拔插(Other/ComboJack)
 
