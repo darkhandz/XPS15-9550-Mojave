@@ -4,7 +4,7 @@
 
 这里只分享我自己目前在用的配置，不一定适合你，可以参考，修改成自己合用的。
 
-这套配置是我从10.13.6直接升级上来10.14用的，不知道在全新安装10.14的时候会不会有什么意外，请自行测试下。
+这套配置是我10.14.1用的，没有在全新安装的情况下测试过，请自行测试下。
 
 > 请不要开启`filevault`，我的配置里删除掉相关的efi文件了，你有需要的话，自己重新安装一下Clover。
 
@@ -27,20 +27,10 @@ DW1830是免驱的，如果你的无线网卡是Killer的，那就很不幸了�
 
 - 独显不指望了
 - 无线5GHz达不到最高速度（我没具体测试过）
-- ThunderBolt/USB-C 应该不行（没设备测试）
+- ThunderBolt没设备测试
+- USB-C的扩展坞在睡眠唤醒之后需要再拔插一次
 - 低亮度会有轻微闪屏
-- APFS搭配默认开启TRIM的NVMe SSD，开机时间太长了（要是受不了可以试试各种手段转回HFS+）
-
-### 额外的驱动(Other/LE)
-
-这个文件夹的东西是要安装到`/Library/Extensions/`里面的。
-
-- 执行命令：`sudo cp -r 把AppleGraphicsDevicePolicyInjector.kext拖过来 /Library/Extensions/`
-- 执行命令：`sudo kextcache -i /`
-
-第一条命令的`AppleGraphicsDevicePolicyInjector.kext`是用来打开`MacBookPro13,3`这个SMBIOS的HDMI图像输出的。  
-第二条是重建缓存，让添加的第三方驱动重建缓存，在重启后生成新的缓存。
-
+- APFS搭配非Apple的NVMe SSD，开机时间太长了（要是受不了可以试试各种手段转回HFS+）
 
 ### 耳机拔插(Other/ComboJack)
 
