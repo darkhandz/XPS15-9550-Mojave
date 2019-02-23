@@ -19,7 +19,7 @@
 				<key>FixMutex</key>
 				<true/>
 				<key>FixRTC</key>
-				<true/>
+				<false/>
 				<key>FixTMR</key>
 				<true/>
 			</dict>
@@ -786,7 +786,7 @@
 	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>AppleRTC</key>
-		<true/>
+		<false/>
 		<key>DellSMBIOSPatch</key>
 		<true/>
 		<key>ForceKextsToLoad</key>
