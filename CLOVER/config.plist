@@ -618,11 +618,13 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 brcmfx-country=#a -lilubetaall agdpmod=vit9696</string>
+		<string>-v dart=0 darkwake=0 brcmfx-country=#a -lilubetaall agdpmod=vit9696 -v keepsyms=1 debug=0x100</string>
 		<key>DefaultVolume</key>
 		<string>OSX</string>
 		<key>NeverHibernate</key>
 		<true/>
+		<key>RtcHibernateAware</key>
+		<false/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
